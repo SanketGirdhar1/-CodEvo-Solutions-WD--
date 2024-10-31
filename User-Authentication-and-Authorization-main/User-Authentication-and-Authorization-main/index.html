@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sanket Girdhar">
+    <title>Login Page</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<script type="module" src="script.js"></script>
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row main-content bg-success text-center">
+            <div class="col-md-4 text-center company__info">
+                <span class="company__logo"><h2><span class="fa fa-android"></span></h2></span>
+                <h4 class="company_title">Sanket Girdhar's</h4>
+            </div>
+            <div class="col-md-8 col-xs-12 col-sm-12 login_form">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h2>Log In</h2>
+                    </div>
+                    <div class="row">
+                        <form id="login-form" class="form-group">
+                            <div class="row">
+                                <input type="email" name="username" id="username" class="form__input" placeholder="Email" required>
+                            </div>
+                            <div class="row">
+                                <input type="password" name="password" id="password" class="form__input" placeholder="Password" required>
+                            </div>
+                            <div class="row">
+                                <input type="checkbox" name="remember_me" id="remember_me" class="">
+                                <label for="remember_me">Remember Me!</label>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Submit" class="btn">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <p>Don't have an account? <a href="#" data-toggle="modal" data-target="#registerModal">Register Here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="register-form" class="form-group">
+                        <div class="row">
+                            <input type="email" name="register-email" id="register-email" class="form__input" placeholder="Email" required>
+                        </div>
+                        <div class="row">
+                            <input type="password" name="register-password" id="register-password" class="form__input" placeholder="Password" required>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Create Account" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid text-center footer">
+        Coded with &hearts; by <a href="https://bit.ly/yinkaenoch">Sanket Girdhar.</a>
+    </div>
+
+    <!-- Bootstrap JS for Modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
